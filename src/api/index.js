@@ -5,7 +5,8 @@ const config = {
   baseUrl: 'https://api.hnpwa.com/v0/'
 };
 
-// API 함수들을 정리
+// API 함수 정리
+// 나중에 도메인 별로 API 함수를 파일을 나눠서 관리할 수 있음
 function fetchNewsList() {
   return axios.get(`${config.baseUrl}news/1.json`);
 }
