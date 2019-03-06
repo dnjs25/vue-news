@@ -13,7 +13,8 @@ export const store = new Vuex.Store({
     jobs: [],
     ask: [],
     user: {},
-    item: [],
+    // props 전달 시 Object형태이므로 [] -> {} 변경
+    item: {},
   },
   getters: {
     fetchedAsk(state) {
