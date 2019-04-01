@@ -9,12 +9,13 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    news: [],
-    jobs: [],
-    ask: [],
+    // news: [],
+    // jobs: [],
+    // ask: [],
     user: {},
     // props 전달 시 Object형태이므로 [] -> {} 변경
     item: {},
+    list: [],
   },
   getters: {
     fetchedAsk(state) {

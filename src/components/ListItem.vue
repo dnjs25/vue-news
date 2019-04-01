@@ -39,19 +39,19 @@
 <script>
 
 export default {
-  created() {
-    const name = this.$route.name;
-    if (name === 'news') {
-      this.$store.dispatch('FETCH_NEWS');
-    } else if (name === 'ask') {
-      this.$store.dispatch('FETCH_ASK');
-    } else if (name === 'jobs') {
-      this.$store.dispatch('FETCH_JOBS');
-    }
-  },
+  // created() {
+  //   const name = this.$route.name;
+  //   if (name === 'news') {
+  //     this.$store.dispatch('FETCH_NEWS');
+  //   } else if (name === 'ask') {
+  //     this.$store.dispatch('FETCH_ASK');
+  //   } else if (name === 'jobs') {
+  //     this.$store.dispatch('FETCH_JOBS');
+  //   }
+  // },
   computed: {
     listItems() {
-      return this.$store.state[this.$route.name];
+      return this.$store.state.list;
       // const name = this.$route.name;
       // if (name === 'news') {
       //   return this.$store.state.news;
